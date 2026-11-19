@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+</head>
+<body>
+    <h1>Settings</h1>
+    <p>Welcome to your settings page!</p>
+    <!-- navigation bar -->
+    <nav>
+        <a href="./dashboard.html">Home</a></li>
+        <a href="./profile.html">Profile</a></li>
+        <a href="./settings.html">Settings</a></li>
+        <a href="./logout.html">Logout</a></li>
+    </nav>
+
+    <p>Here you can adjust your account settings.</p>
+
+    <!-- settings form -->
+    <form action="/update-settings.html" method="post">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" value="johndoe@example.com"><br><br>
+        <label for="password">New Password:</label>
+        <input type="password" id="password" name="password" minlength="8"><br><br>
+        <button type="submit">Update Settings</button>
+    </form>
+</body>
+</html>
